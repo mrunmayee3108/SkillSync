@@ -14,7 +14,7 @@ st.subheader("Skill Match and Gap Analysis System for job seekers.")
 st.divider()
 st.write("Select a job role and analyze your resume skills")
 
-base_url = "http://127.0.0.1:8000"
+base_url = "https://skillsync-gwqj.onrender.com"
 all_roles = requests.get(f"{base_url}/job-roles")
 roles = all_roles.json()["roles"]
 skills_catalog = requests.get(f"{base_url}/skills-catalog").json()["skills"]
